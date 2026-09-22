@@ -1,0 +1,32 @@
+# Frontend dependencies and output
+node_modules/
+dist/
+.pnpm-store/
+
+# Rust / Tauri output
+target/
+src-tauri/target/
+src-tauri/gen/
+
+# Local llama.cpp runtime and models
+runtime/
+*.gguf
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.vite/
+.turbo/
+
+# Editor and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

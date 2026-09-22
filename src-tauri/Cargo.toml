@@ -1,0 +1,21 @@
+[package]
+name = "ai-bracho"
+version = "0.2.0"
+description = "A local-first AI companion"
+authors = ["AI Bracho contributors"]
+edition = "2021"
+
+[lib]
+name = "ai_bracho_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+futures-util = "0.3"
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["time"] }
